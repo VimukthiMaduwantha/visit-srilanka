@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/NavBarview.css'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import NavBarview from './components/NavBarview'
+import Footer from './components/Footer'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <h1>Hello</h1>
-        <button>Click here</button>
-      </div>
+      <NavBarview />
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+      </Routes>
+      <Footer />
     </>
   )
 }
