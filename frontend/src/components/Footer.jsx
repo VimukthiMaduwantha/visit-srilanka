@@ -15,7 +15,7 @@ function Footer() {
         navigate('/')
     }
     const moveTwo = () => {
-        navigate('/aboutUs')
+        navigate('/historyAndCulture')
     }
     const moveThree = () => {
         navigate('/places')
