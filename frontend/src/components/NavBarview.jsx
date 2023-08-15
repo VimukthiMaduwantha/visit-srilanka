@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Button } from "@mui/material";
 
 function NavBarview() {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,20 +6,16 @@ function NavBarview() {
     return (
         <>
             <div className="Navbar">
-                <span className="nav-logo">visit<span style={{ color: 'red' }}>SriLanka</span></span>
+
+                <span className="nav-logo"><a href="/" style={{ textDecoration: 'none' }}><span style={{ color: 'black', }}>visit</span><span style={{ color: 'red' }}>SriLanka</span></a></span>
+
                 <div className={`nav-items ${isOpen && "open"}`}>
                     <a href="/">Home</a>
-                    <a href="/about">AboutUs</a>
-                    <a href="/service">Places</a>
-                    <a href="/contact">Feedback and reviews</a>
-                    <a href="/contact">Blog</a>
-                    {/* <Button sx={{
-                        color: 'red',
-                        backgroundColor: 'white',
-                        marginRight: '15px',
-                        width: { md: '210px', xs: '100px' }
-
-                    }} variant="text">Text</Button> */}
+                    {/* <a href="/aboutUs">About</a> */}
+                    <a href="/historyAndCulture">History and Culture</a>
+                    <a href="/places">Places</a>
+                    <a href="/feedback">Reviews</a>
+                    <a href="/journal">Journal</a>
                 </div>
                 <div
                     className={`nav-toggle ${isOpen && "open"}`}

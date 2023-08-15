@@ -6,8 +6,26 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { useNavigate } from 'react-router-dom';
 
 function Footer() {
+    const navigate = useNavigate();
+
+    const moveOne = () => {
+        navigate('/')
+    }
+    const moveTwo = () => {
+        navigate('/aboutUs')
+    }
+    const moveThree = () => {
+        navigate('/places')
+    }
+    const moveFour = () => {
+        navigate('/feedback')
+    }
+    const moveFive = () => {
+        navigate('/journal')
+    }
     return (
         <>
             <Box sx={{ marginBottom: { md: 0, xs: 0 }, backgroundColor: '#A4BC92' }}>
@@ -27,13 +45,12 @@ function Footer() {
                         <Grid item xs={8} md={6}>
                             <Box >
                                 <Typography sx={{ fontSize: '20px', textAlign: 'center' }}>Quick Links</Typography>
-                                <br />
                                 <Box sx={{ display: { md: 'grid', xs: 'grid' }, justifyContent: { md: 'center', xs: 'center' }, }}>
-                                    <Button sx={{ color: 'Black', marginRight: '10px' }}>Home</Button>
-                                    <Button sx={{ color: 'Black', marginRight: '10px' }}>About Us</Button>
-                                    <Button sx={{ color: 'Black', marginRight: '10px' }}>Places</Button>
-                                    <Button sx={{ color: 'Black', marginRight: '10px' }}>Feedback and reviews</Button>
-                                    <Button sx={{ color: 'Black', marginRight: '10px' }}>Blog</Button>
+                                    <Button sx={{ color: 'Black', marginRight: '10px' }} onClick={moveOne}>Home</Button>
+                                    <Button sx={{ color: 'Black', marginRight: '10px' }} onClick={moveTwo} >About Us</Button>
+                                    <Button sx={{ color: 'Black', marginRight: '10px' }} onClick={moveThree}>Places</Button>
+                                    <Button sx={{ color: 'Black', marginRight: '10px' }} onClick={moveFour}>Feedback and reviews</Button>
+                                    <Button sx={{ color: 'Black', marginRight: '10px' }} onClick={moveFive}>Journal</Button>
                                 </Box>
                             </Box>
                         </Grid>
