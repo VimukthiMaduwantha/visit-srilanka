@@ -11,7 +11,6 @@ function NavBarview() {
 
                 <div className={`nav-items ${isOpen && "open"}`}>
                     <a href="/">Home</a>
-                    {/* <a href="/aboutUs">About</a> */}
                     <a href="/historyAndCulture">History and Culture</a>
                     <a href="/places">Places</a>
                     <a href="/feedback">Reviews</a>
