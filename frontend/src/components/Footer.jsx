@@ -47,7 +47,7 @@ function Footer() {
                                 <Typography sx={{ fontSize: '20px', textAlign: 'center' }}>Quick Links</Typography>
                                 <Box sx={{ display: { md: 'grid', xs: 'grid' }, justifyContent: { md: 'center', xs: 'center' }, }}>
                                     <Button sx={{ color: 'Black', marginRight: '10px' }} onClick={moveOne}>Home</Button>
-                                    <Button sx={{ color: 'Black', marginRight: '10px' }} onClick={moveTwo} >About Us</Button>
+                                    <Button sx={{ color: 'Black', marginRight: '10px' }} onClick={moveTwo} >History and Culture</Button>
                                     <Button sx={{ color: 'Black', marginRight: '10px' }} onClick={moveThree}>Places</Button>
                                     <Button sx={{ color: 'Black', marginRight: '10px' }} onClick={moveFour}>Feedback and reviews</Button>
                                     <Button sx={{ color: 'Black', marginRight: '10px' }} onClick={moveFive}>Journal</Button>
