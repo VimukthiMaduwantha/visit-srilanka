@@ -30,8 +30,8 @@ function History() {
                                             component='img'
                                             src={e.image}
                                         />
-                                        <Typography sx={{ marginX: '10px', fontSize: { xs: '13px' } }} >{e.title} </Typography>
-                                        <Typography sx={{ marginX: '10px', fontSize: { xs: '9px' } }}>
+                                        <Typography sx={{ marginX: '10px', fontSize: { xs: '13px', md: '20px' } }} >{e.title} </Typography>
+                                        <Typography sx={{ marginX: '10px', fontSize: { xs: '9px', md: '15px' } }}>
                                             {e.description.substring(0, 250) + ' ...'}
                                         </Typography>
                                     </Card>
