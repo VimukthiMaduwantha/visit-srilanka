@@ -27,11 +27,11 @@ function JournalCardView({ name, image, pDate, description, sectionOneHeading, s
 
                     <Box paddingX={1}>
                         <Typography sx={{ fontSize: { xs: '11px', md: '15px' }, fontWeight: 'bold', fontFamily: 'Carrois Gothic SC, sans-serif' }}>{name.substring(0, 34) + "..."}</Typography>
-                        <Typography>{pDate}</Typography>
+                        <Typography sx={{ fontSize: { xs: '8px', md: '13px' } }}>{pDate}</Typography>
                     </Box>
                     <CardContent >
-                        <Typography sx={{ fontSize: 'Kulim Park, sans-serif' }}>
-                            {description.substring(0, 65) + "..."}
+                        <Typography sx={{ fontSize: 'Kulim Park, sans-serif', display: { xs: 'none', md: 'contents' }, overflow: 'hidden' }}>
+                            {description/* .substring(0, 65) + "..." */}
                         </Typography>
                     </CardContent>
                 </Card >

@@ -53,40 +53,51 @@ BootstrapDialogTitle.propTypes = {
     onClose: PropTypes.func.isRequired,
 };
 
-export default function JournalDialogBox({ open, handleCloseDialog, data }) {
+export default function JournalDialogBox({ open, isCloseDialogBox, data }) {
 
     return (
         <div>
             <BootstrapDialog
-                onClose={handleCloseDialog}
+                onClose={isCloseDialogBox}
                 aria-labelledby="customized-dialog-title"
                 open={open}
             >
-                <BootstrapDialogTitle id="customized-dialog-title" onClose={handleCloseDialog} >
-                    {data.name}
+                <BootstrapDialogTitle id="customized-dialog-title" onClose={isCloseDialogBox}>
+                    <Typography sx={{ fontSize: { xs: '13px', md: '18px' }, fontWeight: 'bold', fontFamily: 'Raleway, sans-serif' }}>{data.name}</Typography>
                 </BootstrapDialogTitle>
                 <DialogContent >
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={2} >
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} md={12}>
                                 <Card sx={{ height: 'auto', width: '100%', objectFit: 'contain' }}>
                                     <CardMedia
                                         component="img"
                                         src={data.image}
-                                        sx={{ height: 'auto', width: '100%', }}
-
+                                        sx={{ height: 'auto', width: '100%' }}
                                     />
                                 </Card>
-
+                                <Box>
+                                    <Typography sx={{ fontSize: '10px', textAlign: 'right' }}>{data.pDate}</Typography>
+                                </Box>
                             </Grid>
-                            <Grid item xs={12} md={8}>
-                                <Typography gutterBottom>
+                            <Grid item xs={12} md={12}>
+                                <Typography gutterBottom sx={{ fontSize: { xs: '13px', md: '15px' }, textAlign: 'justify' }}>
                                     {data.description}
-                                    <br />
-                                    <h2>
-                                        {data.sectionOneHeading}
-                                    </h2>
                                 </Typography>
+                                <br />
+                                <Box>
+                                    <Typography sx={{ fontWeight: 'bold' }}>{data.sectionOneHeading}</Typography>
+                                    <Typography sx={{ textAlign: 'justify', fontSize: { xs: '13px', md: '15px' } }}>{data.sectionOneDes}</Typography>
+                                    <br />
+                                    <Typography sx={{ fontWeight: 'bold' }}>{data.sectionTwoHeading}</Typography>
+                                    <Typography sx={{ textAlign: 'justify', fontSize: { xs: '13px', md: '15px' } }}>{data.sectionTwoDes}</Typography>
+                                    <br />
+                                    <Typography sx={{ fontWeight: 'bold' }}>{data.sectionThreeHeading}</Typography>
+                                    <Typography sx={{ textAlign: 'justify', fontSize: { xs: '13px', md: '15px' } }}>{data.sectionThreeDes}</Typography>
+                                    <br />
+                                    <Typography sx={{ fontWeight: 'bold' }}>{data.sectionFourHeading}</Typography>
+                                    <Typography sx={{ textAlign: 'justify', fontSize: { xs: '13px', md: '15px' } }}>{data.sectionFourDes}</Typography>
+                                </Box>
                             </Grid>
                         </Grid>
                     </Box>

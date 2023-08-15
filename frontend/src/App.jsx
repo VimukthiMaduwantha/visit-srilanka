@@ -7,8 +7,8 @@ import AboutUs from './pages/AboutUs'
 import Places from './pages/Places'
 import Feedback from './pages/Feedback'
 import Journal from './pages/Journal'
-
-
+import 'animate.css';
+import History from './pages/History'
 
 function App() {
 
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/aboutUs' element={<AboutUs />} />
+        <Route exact path='/historyAndCulture' element={<History />} />
         <Route exact path='/places' element={<Places />} />
         <Route exact path='/feedback' element={<Feedback />} />
         <Route exact path='/journal' element={<Journal />} />
