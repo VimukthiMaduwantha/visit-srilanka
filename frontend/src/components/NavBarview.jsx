@@ -7,7 +7,7 @@ function NavBarview() {
         <>
             <div className="Navbar">
 
-                <span className="nav-logo"><a href="/" style={{ textDecoration: 'none' }}><span style={{ color: 'black', }}>visit</span><span style={{ color: 'red' }}>SriLanka</span></a></span>
+                <span className="nav-logo"><a href="/" style={{ textDecoration: 'none' }}><span style={{ fontFamily: 'Audiowide, cursive', color: 'black', textTransform: 'uppercase' }}>visit</span><span style={{ fontFamily: 'Audiowide, cursive', color: '#800000' }}>S</span><span style={{ fontFamily: 'Audiowide, cursive', color: 'orange', }}>R</span><span style={{ fontFamily: 'Audiowide, cursive', color: 'green' }}>I</span><span style={{ fontFamily: 'Audiowide, cursive', color: 'black' }}>LANKA</span></a></span>
 
                 <div className={`nav-items ${isOpen && "open"}`}>
                     <a href="/">Home</a>

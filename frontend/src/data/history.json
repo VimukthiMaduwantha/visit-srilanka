@@ -2,11 +2,25 @@
     {
         "title": "Family Travel",
         "description": "Set off on an adventure through time and familiarise your whole family with the culture and history of this island nation. Trek the paths that kings had, stand on grounds that have seen epic battles, discover the ruins of magnificent cities and visit the centuries old temples. Discover the ancient artifacts behind the glass in museums and listen to the stories that they have to tell. Embrace all the chances to learn about a new culture first hand and be transported to ‘a long time ago’.",
-        "image": "assets/History/fam.jpg"
+        "image": "assets/History/fam.jpg",
+        "path": "/family"
     },
     {
-        "title": "Family Travel",
-        "description": "Set off on an adventure through time and familiarise your whole family with the culture and history of this island nation. Trek the paths that kings had, stand on grounds that have seen epic battles, discover the ruins of magnificent cities and visit the centuries old temples. Discover the ancient artifacts behind the glass in museums and listen to the stories that they have to tell. Embrace all the chances to learn about a new culture first hand and be transported to ‘a long time ago’.",
-        "image": "assets/History/fam.jpg"
+        "title": "Romantic Escapes",
+        "description": "History is filled with love stories, discover the famous tales of Ceylon travelling the land. Uncover the romances that shaped the cultural and historical areas. From the first Prince of Sri Lanka, to the British Governor who fell in love with a gypsy dancer, to the love story of Rama and Sita that crossed the Indian Ocean, old Ceylon has a myriad of intricate love stories that shaped their times to leave a lasting impression on everyone.",
+        "image": "assets/History/romantic.jpg",
+        "path": "/romantic"
+    },
+    {
+        "title": "Group Holydays",
+        "description": "Seize the moment with your friends as you travel through the cultural triangle of Sri Lanka, discovering the historic monuments of the area. From the Sigiriya Rock Fortress; a UNESCO World Heritage Site, that is a showcase of architectural marvel and mystery to the centuries old Dambulla Cave Temple with its intricate artwork depicting ancient tales of kings, never to be forgotten discoveries await you all.",
+        "image": "assets/History/group.jpg",
+        "path": "/romantic"
+    },
+    {
+        "title": "Solo Travels",
+        "description": "Travelling solo through the Cultural Triangle is an experience that is not to be missed. Discovering the historical remains of the ancient cities and standing still as you take in their wonder and majesty while learning the tales attached to each is a journey of self-discovery. Climb up to Sigiriya Rock Fortress, stand amongst the ancient ruins of Anuradhapura, delve into the Dambulla Cave Temple and visit the Temple of the Tooth Relic in Kandy. Walk in the footsteps of history and forever be changed by the experience.",
+        "image": "assets/History/solo.jpg",
+        "path": "/romantic"
     }
 ]
