@@ -2,8 +2,15 @@ import { Box, Card, CardActionArea, CardContent, CardHeader, CardMedia, Grid, Ty
 import React from 'react'
 import his from '../assets/history.jpg'
 import history from '../data/history.json'
+import { useNavigate } from 'react-router-dom'
 
 function History() {
+    const navigate = useNavigate();
+
+    const movePage = (e) => {
+        console.log("E", e)
+        navigate(e.path)
+    }
     return (
         <>
             <Box sx={{ width: '100%' }}>
@@ -24,13 +31,16 @@ function History() {
                     <Grid container spacing={2}>
                         {history.map((e, i) => (
                             <Grid key={i} item xs={6} md={6}>
-                                <CardActionArea>
+                                <CardActionArea onClick={() => movePage(e)}>
                                     <Card>
-                                        <CardMedia
-                                            component='img'
-                                            src={e.image}
-                                        />
-                                        <Typography sx={{ marginX: '10px', fontSize: { xs: '13px', md: '20px' } }} >{e.title} </Typography>
+                                        <Box sx={{ overflow: 'hidden' }}>
+                                            <CardMedia
+                                                component='img'
+                                                src={e.image}
+                                                className='imgHover'
+                                            />
+                                        </Box>
+                                        <Typography sx={{ marginX: '10px', fontSize: { xs: '13px', md: '20px' }, fontFamily: 'Wellfleet, cursive', fontWeight: 'bold' }} >{e.title} </Typography>
                                         <Typography sx={{ marginX: '10px', fontSize: { xs: '9px', md: '15px' } }}>
                                             {e.description.substring(0, 250) + ' ...'}
                                         </Typography>

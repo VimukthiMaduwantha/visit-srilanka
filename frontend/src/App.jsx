@@ -9,6 +9,8 @@ import Feedback from './pages/Feedback'
 import Journal from './pages/Journal'
 import 'animate.css';
 import History from './pages/History'
+import FamilyTour from './components/FamilyTour'
+import RomanticTour from './components/RomanticTour'
 
 function App() {
 
@@ -22,6 +24,8 @@ function App() {
         <Route exact path='/places' element={<Places />} />
         <Route exact path='/feedback' element={<Feedback />} />
         <Route exact path='/journal' element={<Journal />} />
+        <Route exact path='/family' element={<FamilyTour />} />
+        <Route exact path='/romantic' element={<RomanticTour />} />
       </Routes>
       <br />
       <Footer />
